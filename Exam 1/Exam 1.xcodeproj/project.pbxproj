@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4B12792F1DA602D500D82215 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B12792E1DA602D500D82215 /* main.cpp */; };
+		4BF525261DA6F9190087AE1B /* Movie.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BF525241DA6F9190087AE1B /* Movie.cpp */; };
+		4BF525291DA6F92B0087AE1B /* Theater.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4BF525271DA6F92B0087AE1B /* Theater.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		4B12792B1DA602D500D82215 /* Exam 1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Exam 1"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B12792E1DA602D500D82215 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		4BF525241DA6F9190087AE1B /* Movie.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Movie.cpp; sourceTree = "<group>"; };
+		4BF525251DA6F9190087AE1B /* Movie.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Movie.hpp; sourceTree = "<group>"; };
+		4BF525271DA6F92B0087AE1B /* Theater.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Theater.cpp; sourceTree = "<group>"; };
+		4BF525281DA6F92B0087AE1B /* Theater.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Theater.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				4B12792E1DA602D500D82215 /* main.cpp */,
+				4BF525241DA6F9190087AE1B /* Movie.cpp */,
+				4BF525251DA6F9190087AE1B /* Movie.hpp */,
+				4BF525271DA6F92B0087AE1B /* Theater.cpp */,
+				4BF525281DA6F92B0087AE1B /* Theater.hpp */,
 			);
 			path = "Exam 1";
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BF525261DA6F9190087AE1B /* Movie.cpp in Sources */,
+				4BF525291DA6F92B0087AE1B /* Theater.cpp in Sources */,
 				4B12792F1DA602D500D82215 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +258,7 @@
 				4B1279341DA602D600D82215 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
