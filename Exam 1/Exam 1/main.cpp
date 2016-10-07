@@ -13,6 +13,7 @@
 using namespace std;
 
 int main() {
+    //Creates an array of 11 movies
         const int MOVIECOUNT = 11;
         Movie movieListing[] = {
             Movie("Bull Durham", "Comedy", 0), Movie("Ocean's Eleven", "Action", 2),
@@ -22,27 +23,35 @@ int main() {
             Movie("Monte Python's Meaning of Life", "Comedy", 19), Movie("Jaws", "Horror", 21),
             Movie("Usual Suspects", "Action", 23),
         };
+    
+    //Adds those 11 movies to the theater
         Theater garland("The Garland", "509-327-2509");
         for (int m = 0; m < MOVIECOUNT; m++) {
             garland.AddMovie(movieListing[m]);
         }
+    
+    //Checks to see if GetMovieForHour function in the theater class works as desired
         int errors = 0;
-        if (garland.GetMovieForHour(-1) != "") {
+        if (garland.GetMovieForHour(-1, movieListing) != "") {
             errors++;
             cout << "error: not handling -1 correctly\n";
         }
-        if (garland.GetMovieForHour(25) != "") {
+        if (garland.GetMovieForHour(25, movieListing) != "") {
             errors++;
             cout << "error: not handling 25 correctly\n";
         }
-        if (garland.GetMovieForHour(18) != "Monte Python's Meaning of Life") {
+        if (garland.GetMovieForHour(19, movieListing) != "Monte Python's Meaning of Life") {
             errors++;
-            cout << "error: incorrect movie for 18th hour\n";
+            cout << "error: incorrect movie for 19th hour\n";
         }
-        if (garland.GetShowTimeForGenre("Comedy") != 0) {
+    
+    //Checks to see if GetShowTimeForGenre function in theater class works as desired
+        if (garland.GetShowTimeForGenre("Comedy", movieListing) != 0) {
             errors++;
             cout << "error: incorrect Comedy\n";
         }
+    
+    //Returns the result of the tests
         if (errors == 0) cout << "Passed\n";
         else cout << "Errors: " << errors << endl;
     
